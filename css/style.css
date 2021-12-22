@@ -1,0 +1,524 @@
+/* RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+
+/* SHARE */
+.btn_ca{
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    background: #0082e6;
+}
+.btn_ca:hover{
+    background: #484848;
+}
+a{
+    text-decoration: none;
+}
+img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+header{
+    background-color: #2AF598;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+.logo-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-header a{
+    color: black;
+    font-size: 3.0rem;
+    font-family: 'Berkshire Swash', cursive;
+    text-decoration: none;
+}
+.img-logo{
+    margin: 10px 0 10px 10px;
+    width: 45px;
+    height: 45px;
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+}
+.nav-header ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.nav-header ul li a{
+    color: white;
+    font-size: 1.5rem;
+    /* Mantener background */
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+    .nav-header .link-header.active, .link-header:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    background-image: url(../assets/icon/icon-menu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    color: white;
+    float: right;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    display: none;
+}
+/* impedir que muestre el label o checkbox */
+#check{
+    display: none;
+}
+
+/* SLIDE - SECTION FIRST*/
+/* Default */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Slide manual */
+.image{
+    width: 180px;
+    height: 180px;
+}
+.image img{
+    width: 150px;
+    height: 150px;
+}
+.content-slide p{
+    font-size: 1.5rem;
+}
+.content-slide span{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #0082e6;
+}
+.content-slide .btn_ca{
+    font-size: 1.8rem;
+    margin: 1rem 1rem;
+    padding: 1rem 2rem;
+}
+
+
+
+/* PRODUCTS - SECTION SECOND */
+
+.section-products{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #f3f2f2;
+}
+.title-products{
+    margin-top: 10px;
+}
+.title-products h2{
+    position: relative;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+/* Subraya el titulo */
+.title-products h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2AF598;
+}
+.container-product{
+    margin: 10px 0;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    align-self: center;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 1px #b1b1b1 solid;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+.article .container-img-product{
+    width: 240px;
+    height: 240px;
+    margin: 10px 0;
+    align-self: center;
+    justify-content: center;
+    assas
+}
+.article .container-img-product img{
+    width: 100%;
+    height: 100%;
+}
+.article .container-desc{
+    border-top: 1px solid #484848;
+    margin: 10px;
+    text-align: center;
+}
+.article .container-desc .desc-product{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+.article .container-desc .price-product{
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* PRODUCTS SLIDE - SECTION THIRD */
+
+.title-more-products{
+    margin-top: 10px;
+}
+.title-more-products h2{
+    position: relative;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Subraya el titulo */
+.title-more-products h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2AF598;
+}
+.section-products-slide{
+    display: flex;
+    margin: 20px 0;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.section-products-slide .article-slide{
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    width: 70%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 1px #b1b1b1 solid;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+.container-img-product-slide{
+    width: 180px;
+    height: 180px;
+    margin: 10px 0;
+    align-self: center;
+    justify-content: center;
+}
+.container-img-product-slide img{
+    width: 100%;
+    height: 100%;
+}
+.container-desc-slide{
+    border-top: 1px solid #484848;
+    margin: 10px;
+    text-align: center;
+}
+.container-desc-slide .desc-product{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+.container-desc-slide .price-product{
+    margin-top: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.container-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn_ca-slide{
+    margin-top: 1rem;
+    display: inline-block;
+    border: 2px solid #0082e6;
+    border-radius: .5rem;
+    padding: .7rem 1rem;
+    font-size: 1.4rem;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1.8rem;
+    transition: .7s all ease;
+}
+.btn_ca-slide:hover{
+    background-color: #0082e6;
+    color: #fff;
+}
+
+
+
+/* CONTACT */
+
+.section_contact{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+.section_contact .container_contact{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+.section_contact .container_contact h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+/* Subraya el titulo */
+.section_contact .container_contact h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2AF598;
+}
+.section_contact .container_contact .input_contact{
+    align-self: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230, 230, 230, 0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+}
+.section_contact .container_contact .input_contact:hover{
+    background-color:rgba(0,0,0,0.1);
+}
+.section_contact .container_contact .input_contact:focus{
+    background-color: #fff;
+    border: 2px solid #2AF598;
+}
+.section_contact .container_contact .area{
+    min-height: 150px;
+}
+.section_contact .container_contact .input_send{
+    width: 70%;
+    max-width: 500px;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2AF598;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10rem;
+    color: #fff;
+    transition: .3s;
+    align-self: center;
+}
+.section_contact .container_contact .input_send:hover{
+    transform: scale(1.1);
+}
+.section_contact .container_contact .input_send:focus{
+    /* Mensaje enviado a futuro */
+}
+
+#sendemail{
+    opacity: 0;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;;
+}
+.logo_footer img{
+    margin: 10px 0;
+}
+.logo_footer p{
+    font-size: 1.6rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+.links-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.links-footer a{
+    font-size: 1.2rem;
+    color: #ccc;
+    transition: .5 all ease;
+    text-decoration: none;
+}
+.links-footer a:hover{
+    color: #484848;
+}
+.rrss-footer{
+    padding: 2px;
+}
+.rrss-footer a img{
+    transition: .5s all ease;
+}
+.rrss-footer a img:hover{
+    transform: scale(1.3);
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media(max-width: 952px){
+    /* Las letras del menu crecen a 1.6rem */
+    .nav-header ul li a{
+        font-size: 1.6rem;
+    }
+}
+
+/* Hasta los 768px el menu aparece */
+@media(max-width: 767px){
+    /* Vuelve el menu a su forma normal */
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        /* Posicione el nav de forma horizontal y a un 100vh */
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 67px;
+    /* Lo lleva a extremo izquierdo */
+    /* left: 0; */
+    /* Lo esconde */
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+    .nav-header ul li{
+        display: block;
+    }
+    .nav-header ul li a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
